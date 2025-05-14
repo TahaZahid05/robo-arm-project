@@ -17,9 +17,12 @@ def calculate_thetas(matrix):
     sin_theta1 = math.sin(theta1)
     cos_theta1 = math.cos(theta1)
 
+    print(sin_theta1,cos_theta1)
     # Calculate theta5 using theta1, r11, r21, r12, r22
     numerator_theta5 = sin_theta1 * r[0][0] - cos_theta1 * r[1][0]
     denominator_theta5 = sin_theta1 * r[0][1] - cos_theta1 * r[1][1]
+    print(numerator_theta5)
+    print(denominator_theta5)
     theta5 = math.atan2(numerator_theta5, denominator_theta5)
 
     # Calculate theta2 using theta1 and theta5
@@ -67,3 +70,5 @@ def calculate_thetas(matrix):
     theta5_deg = math.degrees(theta5)
 
     return theta1_deg, theta2_deg, theta3_deg, theta4_deg, theta5_deg
+
+print(calculate_thetas([[1,0,0,3],[0,1,0,3],[0,0,1,3],[0,0,0,1]]))
