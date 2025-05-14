@@ -17,13 +17,13 @@ robot_chain = Chain(name='5DOF_Arm', links=[
         name="joint1",
         origin_translation=[0, 0, l1],
         origin_orientation=[radians(90), 0, 0],
-        rotation=[0, 0, 1],
+        rotation=[0, 1, 0],
     ),
     URDFLink(
         name="joint2",
         origin_translation=[l2, 0, 0],
         origin_orientation=[0, 0, 0],
-        rotation=[0, 1, 0],
+        rotation=[0, 0, 1],
     ),
     URDFLink(
         name="joint3",
@@ -34,8 +34,8 @@ robot_chain = Chain(name='5DOF_Arm', links=[
     URDFLink(
         name="joint4",
         origin_translation=[0, 0, l4],
-        origin_orientation=[radians(-90), 0, 0],
-        rotation=[0, 1, 0],
+        origin_orientation=[radians(90), 0, 0],
+        rotation=[0, 0, 1],
     ),
     URDFLink(
         name="joint5",
