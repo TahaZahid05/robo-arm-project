@@ -39,9 +39,9 @@ robot_chain = Chain(name='5DOF_Arm', links=[
     ),
     URDFLink(
         name="joint5",
-        origin_translation=[0, 0, 0],
+        origin_translation=[l5, 0, 0],
         origin_orientation=[0, 0, 0],
-        rotation=[0, 1, 0],
+        rotation=[0, 0, 1],
     ),
 ])
 
