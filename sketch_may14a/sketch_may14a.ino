@@ -5,7 +5,7 @@ void setup() {
 void loop() {
   if (Serial.available() > 0) {
     String received = Serial.readStringUntil('\n'); // Read line
-    Serial.print("Received: ");
+    Serial.print("Arduino received: ");
     Serial.println(received); // Send response
   }
 }
